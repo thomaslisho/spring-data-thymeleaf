@@ -14,30 +14,22 @@
 	<body>
 		<div class="container">
 			<h3>Employee Directory List - New Feature</h3>
-			<title>Add New Employee SHORTEN TITLE BRANCH MERGE</title>
-	</head>
-	<body>
-		<div class="container">
-			<h3>Directory: Employee List- SHORTEN TITLE BRANCH MERGE</h3>
->>>>>>> shorten_title
->>>>>>> new_feature
-			<p class="h4 mb-4">Add New Employee</p>
-			<form action="#" th:action="@{/employees/save}"
+			<div class="container">
+				<h3>Directory: Employee List</h3>
+				<p class="h4 mb-4">Add New Employee</p>
+				<form action="#" th:action="@{/employees/save}"
 							 th:object="${employee}" method="POST">
-				<input type="hidden" th:field="*{id}"/>
-				<input type="text" th:field="*{firstName}"
+					<input type="hidden" th:field="*{id}"/>
+					<input type="text" th:field="*{firstName}"
 					   class="form-control mb-4 col-4" placeholder="First Name"/>
-			 	<input type="text" th:field="*{lastName}"
+			 		<input type="text" th:field="*{lastName}"
 					   class="form-control mb-4 col-4" placeholder="Last Name"/>
-				<input type="text" th:field="*{email}"
+					<input type="text" th:field="*{email}"
 					   class="form-control mb-4 col-4" placeholder="E-Mail"/>
-				<button type="submit" class="btn btn-info col-2">Save Employee</button>
-			</form>
-<<<<<<< HEAD
-			<a th:href="@{/employees/list}">Back to employees List</a>
-=======
-			<a th:href="@{/employees/list}">Employees list</a>
->>>>>>> new_feature
+					<button type="submit" class="btn btn-info col-2">Save Employee</button>
+				</form>
+				<a th:href="@{/employees/list}">Back to employees List</a>
+			</div>
 		</div>
 	</body>
 </html>
